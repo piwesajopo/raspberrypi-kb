@@ -1,6 +1,6 @@
 # How to configure git account for commit signing
 
-*Taken From:* (Github About Commit Signature Verification)[https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/about-commit-signature-verification]
+*Taken From:* [Github About Commit Signature Verification](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/about-commit-signature-verification)
 
 ### Creating a GPG Key and loading it into Github
 
@@ -8,7 +8,7 @@ When generating a key keep in mind:
 - Key size must be 4096 bits
 - I preffer a non-expiring key
 - Use your GitHub address, if you are keeping your mail private use your no-reply address supplied by Github.
-- Load your key (shown by the last command in the following code) into your github account as detailed (here)[https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/adding-a-new-gpg-key-to-your-github-account]
+- Load your key (shown by the last command in the following code) into your github account as detailed [here](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/adding-a-new-gpg-key-to-your-github-account)
 
 ```
 # List Secret Keys
