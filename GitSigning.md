@@ -51,4 +51,7 @@ git config --global credential.helper 'cache --timeout 28800'
 ```
 # Set GPG_TTY to your current TTY on your .profile file
 echo 'export GPG_TTY=$(tty)' >> ~/.profile
+
+# Test Passphrase Prompt by encrypting something
+echo "test" | gpg --clearsign
 ```
