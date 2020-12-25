@@ -8,7 +8,7 @@ $ sudo raspi-config
 ```
 
 ## Terminal Way:
-Taken From: [https://linuxize.com/post/how-to-set-or-change-timezone-on-debian-10](https://linuxize.com/post/how-to-set-or-change-timezone-on-debian-10)
+Taken From: (https://linuxize.com/post/how-to-set-or-change-timezone-on-debian-10)
 
 ```
 # Check Timezone
