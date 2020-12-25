@@ -41,4 +41,7 @@ git config --global user.name "piwesajopo"
 
 # Tell git to sign your commits automatically
 git config --global commit.gpgsign true
+
+# Tell git to cache your passwords for 8 hours
+git config --global credential.helper 'cache --timeout 28800'
 ```
