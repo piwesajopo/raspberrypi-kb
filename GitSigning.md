@@ -26,7 +26,7 @@ gpg --list-secret-keys --keyid-format LONG
 gpg --armor --export 3AA5C34371567BD2
 ```
 
-# Configuring Git for Globally using the key to commit
+### Configuring Git for Globally using the key to commit
 
 ```
 # List Secret Keys
@@ -44,4 +44,11 @@ git config --global commit.gpgsign true
 
 # Tell git to cache your passwords for 8 hours
 git config --global credential.helper 'cache --timeout 28800'
+```
+
+### Tell GPG Agent which TTY you are using
+
+```
+# Set GPG_TTY to your current TTY on your .profile file
+echo 'export GPG_TTY=$(tty)' >> ~/.profile
 ```
