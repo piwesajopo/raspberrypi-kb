@@ -1,2 +1,2 @@
-# raspberri-kb
-Raspberry Knowledge Base
+# raspberrypi-kb
+Raspberry Pi Knowledge Base
