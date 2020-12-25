@@ -36,7 +36,7 @@ cd /etc/ssh
 sudo vi sshd_config
 ```
 
-Look for this section and change the **PasswordAuthentication** entry to **no**
+Look for this section and change the ***PasswordAuthentication*** entry to ***no***
 ```
 # To disable tunneled clear text passwords, change to no here!
 PasswordAuthentication no
