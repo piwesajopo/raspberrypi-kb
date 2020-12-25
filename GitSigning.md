@@ -37,7 +37,7 @@ git config --global user.signingkey 3AA5C34371567BD2
 
 # Tell git your mail address and your name
 git config --global user.email "76591915+piwesajopo@users.noreply.github.com"
-git config --global user.name "Moises Soto Jr."
+git config --global user.name "piwesajopo"
 
 # Tell git to sign your commits automatically
 git config --global commit.gpgsign true
