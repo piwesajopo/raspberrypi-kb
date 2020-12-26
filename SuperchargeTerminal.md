@@ -24,7 +24,7 @@ tmux a
 
 ### MOSH
 
-A usefull protocol for connecting to your Raspberry Pi from mobile devices. Install MOSH so the server part running.
+A usefull protocol for connecting to your Raspberry Pi from mobile devices. Install MOSH so the server part is running on your Raspberry.
 ```
 sudo apt install mosh
 ```
