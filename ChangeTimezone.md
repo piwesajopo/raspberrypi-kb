@@ -1,4 +1,4 @@
-# Chaging Timezone
+# Changing the Timezone
 
 ## Easy Way:
 
