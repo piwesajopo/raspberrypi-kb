@@ -2,7 +2,7 @@
 
 ### Run Raspberry Pi Configuration Tool
 ```
-# Go to Interface Options -> SSH 
+# After executing the following command, go to Interface Options -> SSH 
 sudo raspi-config
 ```
 
