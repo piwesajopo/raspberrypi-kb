@@ -6,7 +6,7 @@
 
 **[Super Charge Your Terminal](https://github.com/piwesajopo/raspberrypi-kb/blob/main/SuperchargeTerminal.md)**
 
-**[Changing the Timezone](https://github.com/piwesajopo/raspberrypi-kb/blob/main/change_timezone.md)**
+**[Changing the Timezone](https://github.com/piwesajopo/raspberrypi-kb/blob/main/ChangeTimezone.md)**
 
 **[Enabling SSH](https://github.com/piwesajopo/raspberrypi-kb/blob/main/EnablingSSH.md)**
 
