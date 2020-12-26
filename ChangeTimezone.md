@@ -2,8 +2,9 @@
 
 ## Easy Way:
 
-### Locatisation Options -> Change Timezone
+### Run Raspberry Pi Configuration Tool
 ```
+# Go to Locatisation Options -> Change Timezone
 $ sudo raspi-config
 ```
 
