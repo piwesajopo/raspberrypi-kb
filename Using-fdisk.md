@@ -1,4 +1,4 @@
-# How to use fdisk to manage partition
+# How to use fdisk to manage partitions
 
 ## Note: Use this tool with caution it may damage your OS disk
 
@@ -177,7 +177,7 @@ Calling ioctl() to re-read partition table.
 Syncing disks.
 ```
 
-Now we can format the disk:
+Now we can format the disk and specify the label *NASHDD* should be used for it:
 ```
 $ sudo mkfs.ext4 /dev/sda1 -L NASHDD
 mke2fs 1.44.5 (15-Dec-2018)
