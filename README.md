@@ -11,3 +11,5 @@
 **[Enabling SSH](https://github.com/piwesajopo/raspberrypi-kb/blob/main/EnablingSSH.md)**
 
 **[Git Commit Signing](https://github.com/piwesajopo/raspberrypi-kb/blob/main/GitSigning.md)**
+
+**[Using fdisk utility](https://github.com/piwesajopo/raspberrypi-kb/blob/main/Using-fdisk.md)**
