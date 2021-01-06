@@ -4,9 +4,9 @@
 
 ### Listing your disks and partitions:
 
-**To list your disks and partitions use this command:**
+To list your disks and partitions use this command:
 ```
-sudo fdisk -l
+$ sudo fdisk -l
 ```
 
 Your non-os drives will appear with the sda designation. 
@@ -31,20 +31,22 @@ Device      Start      End  Sectors  Size Type
 
 Let's see if any of the partitions is mounted:
 ```
-df -k | grep sda
+$ df -k | grep sda
 /dev/sda2       30924760   113368  30811392   1% /media/pi/Untitled
 ```
 
 As we can see /dev/sda2 is mounted. Let's unmount this partition:
 ```
-umount /dev/sda2
+$ umount /dev/sda2
 ```
+
+### Erasing existing partitions 
 
 This card was formatted on a Mac, it's read-only, we need to erase it.
 
-It is better to use an interactive fdisk session, you need to run fdisk and specify the disk you will work with:
+For this we launch an interactive fdisk session, you need to run fdisk and specify the disk you will work with:
 ```
-sudo fdisk /dev/sda
+$ sudo fdisk /dev/sda
 ```
 
 You can use the ***p*** command to check the current disk information:
@@ -71,7 +73,7 @@ Partition number (1,2, default 2): 2
 Partition 2 has been deleted.
 ```
 
-And then delete sda1 (the only one left so, you won't be asked which:
+And then delete sda1 (the only one left so, you won't be asked which one):
 ```
 Command (m for help): d
 Selected partition 1
@@ -100,13 +102,14 @@ The kernel still uses the old partitions. The new table will be used at the next
 Syncing disks.
 ```
 
-***Don't worry if you see any errors. Eject the Drive and re-insert to make sure your kernel releases the old partition.***
+*Don't worry if you see an error like the one in this example. Eject the Drive and re-insert to make sure your kernel releases the old partition. The reason for the last error was that the filesystem was still mounted (I intentionally didn't run the umount /dev/sda2 command).*
 
-The reason for the last error was that the filesystem was still mounted (didn't run the umount /dev/sda2 command).
+
+### Creating a New Partition:
 
 After inserting your disk again, let's make sure everything is as expected:
 ```
-sudo fdisk /dev/sda
+$ sudo fdisk /dev/sda
 
 Welcome to fdisk (util-linux 2.33.1).
 Changes will remain in memory only, until you decide to write them.
@@ -176,7 +179,7 @@ Syncing disks.
 
 Now we can format the disk:
 ```
-sudo mkfs.ext4 /dev/sda1 -L NASHDD
+$ sudo mkfs.ext4 /dev/sda1 -L NASHDD
 mke2fs 1.44.5 (15-Dec-2018)
 Creating filesystem with 7814907 4k blocks and 1954064 inodes
 Filesystem UUID: d8a489ee-daef-43d0-83b0-7a9ad9f2a877
@@ -192,8 +195,6 @@ Writing superblocks and filesystem accounting information: done
 
 Disconnect the disk and reconnect it again then check that the filesystem was automatically mounted by the OS:
 ```
-df -k | grep sda
+$ df -k | grep sda
 /dev/sda1       30637908    45080  29013464   1% /media/pi/NASHDD
 ```
-
-**And we are done**
