@@ -30,10 +30,8 @@ cat some_public_key.pub >> ~/.ssh/authorized_keys
 ```
 
 Edit sshd_config file 
-
 ```
-cd /etc/ssh
-sudo vi sshd_config
+sudo vi /etc/ssh/sshd_config
 ```
 
 Look for this section and change the ***PasswordAuthentication*** entry to ***no***
