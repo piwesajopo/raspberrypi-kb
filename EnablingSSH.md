@@ -23,7 +23,7 @@ Create authorized_keys file then add the public keys of client machines that you
 touch ~/.ssh/authorized_keys
 
 # It should be created with 644 permissions, but just to make sure
-chmod 644 authorized_keys
+chmod 644 ~/.ssh/authorized_keys
 
 # Use an editor to put public keys into the file, or just add them if you downloaded them from an email or other source:
 cat some_public_key.pub >> ~/.ssh/authorized_keys
