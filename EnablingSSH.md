@@ -41,3 +41,8 @@ PasswordAuthentication no
 #PasswordAuthentication yes
 #PermitEmptyPasswords no
 ```
+
+Now restart the *sshd* service
+```
+sudo systemctl restart sshd
+```
