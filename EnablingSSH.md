@@ -1,6 +1,6 @@
 # How to enable SSH on Raspbian
 
-### Run Raspberry Pi Configuration Tool
+### Run Raspberry Pi Configuration Tool and enable SSH
 ```
 # After executing the following command, go to Interface Options -> SSH 
 sudo raspi-config
@@ -28,6 +28,8 @@ chmod 644 ~/.ssh/authorized_keys
 # Use an editor to put public keys into the file, or just add them if you downloaded them from an email or other source:
 cat some_public_key.pub >> ~/.ssh/authorized_keys
 ```
+
+### Disabling Password Authentication (only allow connections using certificate)
 
 Edit sshd_config file 
 ```
