@@ -6,7 +6,7 @@ One of the best things about the Raspberry Pi is that you can have different set
 * LibreELEC
 * RetroPie Emulator
 
-However, when you connect to your raspberry Pi you usually do it usimg the IP. This may pose a problem when using different OS installations. To work arround this, you have several optiions:
+However, when you connect to your raspberry Pi you usually do it using the IP. This may pose a problem when using different OS installations. To work arround this, you have several optiions:
 - **(a)** Configure different static IPs for each installation.
 - **(b)** Maintain a single set of host keys on your installations.
 - **(c)** Use different hostnames for each installation but point them to the same IP.
