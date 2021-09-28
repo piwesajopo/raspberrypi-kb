@@ -12,6 +12,7 @@ When generating a key keep in mind:
 
 ```
 # List Secret Keys
+# It will also create the keybox and trustdb on a new install
 gpg --list-secret-keys --keyid-format LONG
 
 # Generate a new Key if none present
