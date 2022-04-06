@@ -17,3 +17,5 @@
 **[About Host Keys](https://github.com/piwesajopo/raspberrypi-kb/blob/main/host-keys.md)**
 
 **[Adding a Lock Screen Menu Option](https://github.com/piwesajopo/raspberrypi-kb/blob/main/AddLockMenu.md)**
+
+**[Upgrade your current Raspberry Pi release](https://github.com/piwesajopo/raspberrypi-kb/blob/main/Upgrade.md)**
